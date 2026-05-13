@@ -62,6 +62,7 @@ export const cases: Case[] = [
     year: '2025',
     highlight: true,
     tag: 'Pós-graduação',
+    repoUrl: 'https://github.com/Stack-Food',
   },
   {
     id: 'optimus-frame',
@@ -84,6 +85,7 @@ export const cases: Case[] = [
     year: '2025',
     highlight: false,
     tag: 'Pós-graduação',
+    repoUrl: 'https://github.com/Stack-Food/optimus-frame-core',
   },
   {
     id: 'debito-automatico-mapping',

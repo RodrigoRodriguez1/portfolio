@@ -39,6 +39,7 @@ export interface Case {
   year: string
   highlight: boolean
   tag?: string
+  repoUrl?: string
 }
 
 export interface TimelineEvent {

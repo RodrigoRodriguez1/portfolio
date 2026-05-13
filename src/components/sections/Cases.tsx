@@ -126,7 +126,7 @@ function CaseCard({ item, index }: CaseCardProps) {
         )}
       </AnimatePresence>
 
-      {/* Stack + expand hint */}
+      {/* Stack + actions */}
       <div className="flex items-end justify-between gap-4 mt-1">
         <div className="flex flex-wrap gap-1.5">
           {item.stack.map((tech) => (
@@ -136,13 +136,26 @@ function CaseCard({ item, index }: CaseCardProps) {
           ))}
         </div>
 
-        <button
-          onClick={() => setExpanded((v) => !v)}
-          className="flex items-center gap-1 text-[11px] font-mono text-text-muted hover:text-accent transition-colors duration-200 shrink-0"
-        >
-          {expanded ? 'Recolher' : 'Detalhar'}
-          <ArrowUpRight size={11} className={cn('transition-transform duration-200', expanded && 'rotate-90')} />
-        </button>
+        <div className="flex items-center gap-3 shrink-0">
+          {item.repoUrl && (
+            <a
+              href={item.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-[11px] font-mono text-text-muted hover:text-text-primary transition-colors duration-200"
+            >
+              GitHub
+              <ArrowUpRight size={11} />
+            </a>
+          )}
+          <button
+            onClick={() => setExpanded((v) => !v)}
+            className="flex items-center gap-1 text-[11px] font-mono text-text-muted hover:text-accent transition-colors duration-200"
+          >
+            {expanded ? 'Recolher' : 'Detalhar'}
+            <ArrowUpRight size={11} className={cn('transition-transform duration-200', expanded && 'rotate-90')} />
+          </button>
+        </div>
       </div>
     </motion.div>
   )
