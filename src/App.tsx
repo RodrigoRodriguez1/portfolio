@@ -1,6 +1,6 @@
 import { ThemeProvider } from '@/context/ThemeContext'
 import { Navbar, Footer } from '@/components/layout'
-import { Hero, About, Experience, Stack, Timeline, Cases, Contact } from '@/components/sections'
+import { Hero, About, Experience, Stack, Cases, Contact } from '@/components/sections'
 
 function App() {
   return (
@@ -12,7 +12,6 @@ function App() {
           <About />
           <Experience />
           <Stack />
-          <Timeline />
           <Cases />
           <Contact />
         </main>

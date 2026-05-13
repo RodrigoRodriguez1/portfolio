@@ -162,7 +162,7 @@ export function Experience() {
         <SectionHeader
           label="// experiência"
           title="Por onde passei."
-          description="5 empresas em 6 anos. Consultoria, produto e fintech, cada um com um contexto diferente."
+          description="Consultoria, produto e fintech. Cada empresa com um contexto diferente."
           align="left"
         />
 
