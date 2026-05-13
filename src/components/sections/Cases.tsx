@@ -43,7 +43,12 @@ function CaseCard({ item, index }: CaseCardProps) {
             <span className="text-[10px] font-mono text-text-muted">
               {item.company} · {item.year}
             </span>
-            {item.highlight && (
+            {item.tag && (
+              <span className="text-[10px] font-mono text-text-muted bg-surface-raised border border-border px-1.5 py-0.5 rounded">
+                {item.tag}
+              </span>
+            )}
+            {item.highlight && !item.tag && (
               <span className="text-[10px] font-mono text-accent bg-accent/10 border border-accent/20 px-1.5 py-0.5 rounded">
                 Destaque
               </span>
@@ -150,7 +155,7 @@ export function Cases() {
         <SectionHeader
           label="// projetos"
           title="Projetos que valem contar."
-          description="Três situações onde o trabalho técnico tinha consequência direta — migração, Design System e documentação de sistema sem doc."
+          description="Do trabalho no BTG e Banco Master até os projetos da pós-graduação — situações onde as decisões técnicas tinham consequência real."
           align="left"
         />
 

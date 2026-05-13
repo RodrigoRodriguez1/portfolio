@@ -42,6 +42,50 @@ export const cases: Case[] = [
     highlight: true,
   },
   {
+    id: 'stackfood',
+    title: 'StackFood — Pedidos com microserviços',
+    subtitle: 'Plataforma de food service com 5 serviços .NET, SNS/SQS e infra completa na AWS',
+    context:
+      'Projeto da pós-graduação em Software Architecture (FIAP SOAT). O desafio era construir um sistema real de gerenciamento de pedidos para lanchonetes, com múltiplos times de desenvolvimento e serviços independentes.',
+    challenge:
+      'Manter o fluxo de pedido consistente — criação, pagamento, produção e entrega — sem acoplamento entre serviços. Qualquer falha numa etapa não podia derrubar as outras, e o estado do pedido precisava ser rastreável em tempo real.',
+    solution:
+      'Cinco microserviços .NET 8, cada um com banco de dados próprio (PostgreSQL ou DynamoDB conforme o padrão de acesso). Comunicação assíncrona via SNS/SQS — cada serviço publica e consome eventos sem saber quem está do outro lado. Clean Architecture e DDD em todos os serviços. Infra provisionada com Terraform: EKS para os containers, API Gateway com Lambda para autenticação, ArgoCD para GitOps e Cloudflare na borda.',
+    impact:
+      'Fluxo de pedido completo funcionando de ponta a ponta, com BDD tests no serviço de pagamentos e cobertura de testes unitários em todos os serviços. Deploy automatizado via ArgoCD a cada merge na main.',
+    stack: [
+      '.NET 8', 'C#', 'AWS SNS', 'AWS SQS', 'DynamoDB',
+      'PostgreSQL', 'AWS Cognito', 'AWS Lambda', 'API Gateway',
+      'EKS', 'Kubernetes', 'Terraform', 'ArgoCD', 'Docker', 'Cloudflare',
+    ],
+    company: 'Pós Tech FIAP SOAT',
+    year: '2025',
+    highlight: true,
+    tag: 'Pós-graduação',
+  },
+  {
+    id: 'optimus-frame',
+    title: 'OptimusFrame — Processamento de vídeo',
+    subtitle: 'Pipeline assíncrono de extração de frames com .NET, RabbitMQ e OpenCV',
+    context:
+      'Hackathon da pós-graduação (FIAP SOAT). O sistema precisava receber uploads de vídeo, processar os frames de forma assíncrona e disponibilizar o resultado em ZIP para download — sem bloquear o cliente durante o processamento.',
+    challenge:
+      'Processamento de vídeo é pesado e bloqueante. Fazer isso de forma síncrona numa API era inviável. O pipeline precisava ser resiliente a falhas e notificar erros sem depender de polling.',
+    solution:
+      'Três serviços .NET 8 com responsabilidades separadas. O Core recebe o upload em Base64, salva no S3, persiste metadados no PostgreSQL e publica o evento no RabbitMQ. O Transform Worker consome de forma assíncrona, usa OpenCvSharp para extrair os frames, comprime em ZIP e sobe o resultado ao S3. Erros notificados via AWS SES. URL pré-assinada com 60 min de validade para o download. Autenticação via AWS Cognito. Mesma base de infra do StackFood: Terraform, EKS, ArgoCD, API Gateway.',
+    impact:
+      'Pipeline funcionando de ponta a ponta no hackathon. Cobertura de testes > 70% com xUnit, Moq e FluentAssertions. O projeto usou OpenCvSharp — binding .NET do OpenCV — que foi a parte mais técnica e diferente do que normalmente se faz em .NET.',
+    stack: [
+      '.NET 8', 'C#', 'RabbitMQ', 'OpenCvSharp', 'AWS S3',
+      'AWS Cognito', 'AWS SES', 'PostgreSQL', 'API Gateway',
+      'EKS', 'Kubernetes', 'Terraform', 'ArgoCD', 'Docker', 'xUnit',
+    ],
+    company: 'Pós Tech FIAP SOAT — Hackathon',
+    year: '2025',
+    highlight: false,
+    tag: 'Pós-graduação',
+  },
+  {
     id: 'debito-automatico-mapping',
     title: 'Mapeamento do Débito Automático',
     subtitle: 'Documentar um sistema em produção que não tinha documentação',

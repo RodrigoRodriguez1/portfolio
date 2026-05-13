@@ -38,6 +38,7 @@ export interface Case {
   company: string
   year: string
   highlight: boolean
+  tag?: string
 }
 
 export interface TimelineEvent {
