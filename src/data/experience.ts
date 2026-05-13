@@ -9,13 +9,13 @@ export const experiences: Experience[] = [
     location: 'São Paulo, Brasil',
     client: 'BTG Pactual',
     description:
-      'Trabalho no setor de Crédito e Garantias do BTG Pactual. Backend em .NET, microfrontends em React e infraestrutura AWS, num ambiente com dezenas de microserviços interdependentes.',
+      'Trabalho no setor de Crédito e Garantias do BTG Pactual. Full stack: backend em .NET, microfrontends em React e infraestrutura AWS. O ambiente tem dezenas de microserviços interdependentes e inclui tanto sistemas em cloud quanto legados on-premises com WinServices.',
     highlights: [
-      'Migrei a infraestrutura de Garantias do Brasil para uma região AWS nos EUA. Montei a conta do zero: VPC, subnets, Security Groups, IAM com least privilege, CloudFormation modular, filas SQS e tópicos SNS. O ambiente brasileiro não teve nenhuma interrupção.',
-      'Desenvolvo e mantenho serviços event-driven com Lambda, SQS, SNS e EventBridge, integrados a DynamoDB e PostgreSQL no RDS/Aurora. Fluxos síncronos e pipelines assíncronos.',
-      'Faço sustentação em produção com Datadog, CloudWatch e Dynatrace. Em banco, qualquer instabilidade tem custo direto. Diagnóstico rápido e solução precisa são a parte mais importante do trabalho.',
-      'O sistema de Débito Automático não tinha documentação. Mapeei tudo do zero lendo código e analisando logs no Datadog e CloudWatch. Produzi documentação C4, diagramas de sequência e apresentei para OPS e stakeholders.',
-      'No frontend, trabalho nos componentes do core compartilhado em React e TypeScript, mantendo contratos entre squads e implementando i18n para operações internacionais.',
+      'Migrei a infraestrutura de Garantias do Brasil para uma região AWS nos EUA. Montei a conta do zero: VPC, subnets, Security Groups, IAM com least privilege, CloudFormation modular, filas SQS e tópicos SNS. O ambiente brasileiro não teve nenhuma interrupção durante o processo.',
+      'Desenvolvo e mantenho serviços em .NET integrados a Lambda, SQS, SNS e EventBridge. Banco de dados varia por contexto: DynamoDB para leitura intensiva, PostgreSQL no RDS/Aurora para domínios relacionais. Trabalho tanto com fluxos síncronos quanto com pipelines assíncronos.',
+      'Trabalho nos componentes do core compartilhado em React e TypeScript, mantendo contratos entre squads. Implementei globalização (i18n) para operações internacionais do banco.',
+      'O sistema de Débito Automático não tinha documentação. Mapeei o fluxo do zero lendo código e rastreando eventos no Datadog e CloudWatch. Produzi documentação em C4, diagramas de sequência no Miro e apresentei para os times de OPS e engenharia.',
+      'Faço sustentação em produção com Datadog, CloudWatch e Dynatrace. Em banco, qualquer instabilidade tem custo direto. A parte mais importante é diagnóstico rápido e comunicação clara do problema.',
     ],
     stack: [
       'React', 'TypeScript', '.NET', 'AWS Lambda', 'SQS', 'SNS',
