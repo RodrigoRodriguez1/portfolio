@@ -1,11 +1,25 @@
 import { motion } from 'framer-motion'
 import { AnimatedSection, SectionHeader, Badge } from '@/components/shared'
-import { siteConfig } from '@/data'
 
 const certifications = [
   'Exam 480: HTML5 · JavaScript · CSS3',
   'Exam 339: SharePoint Server 2016',
-  'Pós Tech Software Architecture — FIAP',
+  'Pós Tech Software Architecture — FIAP (2025 → 2026)',
+]
+
+const highlights = [
+  {
+    label: 'Migração AWS',
+    detail: 'Infraestrutura de Garantias do Brasil para os EUA. Montei a conta do zero sem parar produção.',
+  },
+  {
+    label: 'Design System',
+    detail: 'Criado do zero no Banco Master. Adotado por múltiplos squads com Storybook e Single-SPA.',
+  },
+  {
+    label: 'Documentação C4',
+    detail: 'Mapeei o Débito Automático do BTG sem nenhuma doc prévia. Análise de logs + leitura de código.',
+  },
 ]
 
 export function About() {
@@ -24,33 +38,31 @@ export function About() {
 
             <div className="space-y-5 text-text-secondary text-base leading-relaxed">
               <p>
-                Sou engenheiro full stack com seis anos trabalhando em{' '}
-                <span className="text-text-primary font-medium">sistemas financeiros</span>.
-                Passei por{' '}
-                <span className="text-text-primary font-medium">BTG Pactual</span> e{' '}
-                <span className="text-text-primary font-medium">Banco Master</span>,
-                onde qualquer falha em produção tem consequência real.
+                Sou engenheiro full stack com 6 anos de carreira passando por{' '}
+                <span className="text-text-primary font-medium">educação, varejo e fintechs</span>.
+                Nos últimos dois anos, trabalhei em sistemas financeiros no{' '}
+                <span className="text-text-primary font-medium">BTG Pactual</span> e no{' '}
+                <span className="text-text-primary font-medium">Banco Master</span>.
               </p>
               <p>
-                Trabalho de forma full stack: backend em{' '}
+                No dia a dia trabalho com backend em{' '}
                 <span className="text-text-primary">.NET</span>,
                 microfrontends em{' '}
                 <span className="text-text-primary">React</span>{' '}
                 com Single-SPA, e infraestrutura na{' '}
                 <span className="text-text-primary">AWS</span>.
-                Os domínios que já trabalhei incluem Crédito, Garantias,
-                Previdência Privada e Tesouro Direto.
+                Já mexi com Crédito, Garantias, Previdência Privada e Tesouro Direto.
               </p>
               <p>
-                Um trabalho que me marcou foi a{' '}
+                Um projeto que me marcou foi a{' '}
                 <span className="text-text-primary">migração da infraestrutura de Garantias</span>{' '}
-                do Brasil para uma região AWS nos EUA. Conduzi do zero, sem
-                interrupção do ambiente de produção.
+                do Brasil para uma região AWS nos EUA. Montei a conta do zero —
+                rede, IAM, CloudFormation, filas — sem parar o ambiente brasileiro.
               </p>
               <p>
-                Estou na{' '}
+                Atualmente na{' '}
                 <span className="text-text-primary">Pós Tech em Software Architecture pela FIAP</span>,
-                aprofundando o lado de decisões sistêmicas e design de plataforma.
+                focando em decisões de sistema e design de plataforma.
               </p>
             </div>
 
@@ -68,29 +80,27 @@ export function About() {
             </div>
           </div>
 
-          {/* Right: stats + highlights */}
-          <div className="space-y-6">
-            {/* Stats grid */}
-            <div className="grid grid-cols-2 gap-3">
-              {siteConfig.stats.map((stat) => (
-                <motion.div
-                  key={stat.label}
-                  whileHover={{ y: -2 }}
-                  transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                  className="card-base"
-                >
-                  <p
-                    className="text-3xl font-light tracking-tight text-text-primary mb-1"
-                    style={{ fontVariantNumeric: 'tabular-nums' }}
-                  >
-                    {stat.value}
-                  </p>
-                  <p className="text-xs text-text-muted font-mono">{stat.label}</p>
-                </motion.div>
-              ))}
-            </div>
+          {/* Right: highlights + info */}
+          <div className="space-y-4">
+            {/* Project highlights — replaces generic stats grid */}
+            {highlights.map((h, i) => (
+              <motion.div
+                key={h.label}
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ y: -2 }}
+                className="card-base group"
+              >
+                <p className="text-text-primary text-sm font-medium mb-1.5 group-hover:text-accent transition-colors duration-200">
+                  {h.label}
+                </p>
+                <p className="text-text-secondary text-sm leading-relaxed">{h.detail}</p>
+              </motion.div>
+            ))}
 
-            {/* Highlight cards */}
+            {/* Current role */}
             <motion.div
               whileHover={{ y: -2 }}
               transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
@@ -101,10 +111,11 @@ export function About() {
                 Pós Tech — Software Architecture
               </p>
               <p className="text-text-muted text-xs">
-                FIAP · 2025 → 2026 · Sistemas distribuídos, event-driven design e engenharia de plataforma.
+                FIAP · 2025 → 2026 · Sistemas distribuídos, event-driven design, engenharia de plataforma.
               </p>
             </motion.div>
 
+            {/* Languages */}
             <motion.div
               whileHover={{ y: -2 }}
               transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
@@ -118,6 +129,7 @@ export function About() {
               </div>
             </motion.div>
 
+            {/* Current position */}
             <motion.div
               whileHover={{ y: -2 }}
               transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
@@ -137,6 +149,7 @@ export function About() {
               </div>
             </motion.div>
           </div>
+
         </div>
       </div>
     </AnimatedSection>

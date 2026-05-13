@@ -33,7 +33,7 @@ export function Stack() {
         <SectionHeader
           label="// stack"
           title="Tecnologias & ferramentas."
-          description="Stack construída ao longo de 6 anos em projetos de alta criticidade — do frontend ao cloud."
+          description="O que uso no dia a dia — frontend, backend, cloud e observabilidade. Acumulado em 6 anos de projetos diferentes."
           align="left"
         />
 

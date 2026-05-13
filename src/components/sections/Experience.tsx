@@ -161,8 +161,8 @@ export function Experience() {
       <div className="section-container">
         <SectionHeader
           label="// experiência"
-          title="Onde construí expertise."
-          description="Trajetória em consultoria e produto, sempre com clientes de alta exigência técnica."
+          title="Por onde passei."
+          description="5 empresas em 6 anos. Consultoria, produto e fintech — cada projeto com contexto diferente."
           align="left"
         />
 

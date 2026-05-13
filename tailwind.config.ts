@@ -9,25 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#0a0a0a',
+        background: 'var(--background)',
         surface: {
-          DEFAULT: '#111111',
-          raised: '#161616',
+          DEFAULT: 'var(--surface)',
+          raised: 'var(--surface-raised)',
         },
         border: {
-          DEFAULT: '#222222',
-          subtle: '#1a1a1a',
-          strong: '#2a2a2a',
+          DEFAULT: 'var(--border)',
+          subtle: 'var(--border-subtle)',
+          strong: 'var(--border-strong)',
         },
         text: {
-          primary: '#fafafa',
-          secondary: '#a3a3a3',
-          muted: '#525252',
+          primary: 'var(--text-primary)',
+          secondary: 'var(--text-secondary)',
+          muted: 'var(--text-muted)',
         },
         accent: {
-          DEFAULT: '#3b82f6',
-          muted: '#1d4ed8',
-          dim: 'rgba(59,130,246,0.12)',
+          DEFAULT: 'var(--accent)',
+          muted: 'var(--accent-muted)',
+          dim: 'var(--accent-dim)',
         },
       },
       fontFamily: {

@@ -9,13 +9,13 @@ export const experiences: Experience[] = [
     location: 'São Paulo, Brasil',
     client: 'BTG Pactual',
     description:
-      'Trabalho no setor de Crédito e Garantias do BTG Pactual, em um ecossistema de mais de 210 serviços. Backend em .NET, microfrontends em React e infraestrutura AWS em produção.',
+      'Trabalho no setor de Crédito e Garantias do BTG Pactual. Backend em .NET, microfrontends em React e infraestrutura AWS — num ambiente com dezenas de microserviços interdependentes.',
     highlights: [
-      'Conduzi a migração da infraestrutura de Garantias para uma região AWS nos EUA. Projetei a conta do zero: topologia de rede, IAM com least privilege, CloudFormation modular, filas SQS e tópicos SNS. A migração aconteceu sem nenhuma interrupção no ambiente brasileiro.',
-      'Desenvolvo e mantenho serviços event-driven com Lambda, SQS, SNS e EventBridge, integrados a DynamoDB e PostgreSQL no RDS/Aurora. Tanto fluxos síncronos quanto pipelines assíncronos.',
-      'Faço sustentação ativa em produção com Datadog, CloudWatch e Dynatrace. Num banco, instabilidade tem custo imediato — diagnóstico rápido e resolução precisa são parte central do trabalho.',
-      'Mapeei o sistema de Débito Automático do zero: sem documentação, com conhecimento concentrado. Produzi documentação C4, diagramas de fluxo e apresentei para OPS e stakeholders de negócio.',
-      'No frontend, desenvolvo componentes do core compartilhado em React e TypeScript, mantendo contratos de interface entre squads e implementando globalização (i18n) para operações internacionais.',
+      'Migrei a infraestrutura de Garantias do Brasil para uma região AWS nos EUA. Montei a conta do zero: VPC, subnets, Security Groups, IAM com least privilege, CloudFormation modular, filas SQS e tópicos SNS. O ambiente brasileiro não teve nenhuma interrupção.',
+      'Desenvolvo e mantenho serviços event-driven com Lambda, SQS, SNS e EventBridge, integrados a DynamoDB e PostgreSQL no RDS/Aurora. Fluxos síncronos e pipelines assíncronos.',
+      'Faço sustentação em produção com Datadog, CloudWatch e Dynatrace. Em banco, qualquer instabilidade tem custo direto — a parte mais importante do trabalho é diagnóstico rápido e solução precisa.',
+      'O sistema de Débito Automático não tinha documentação. Mapeei tudo do zero lendo código e analisando logs no Datadog e CloudWatch. Produzi documentação C4, diagramas de sequência e apresentei para OPS e stakeholders.',
+      'No frontend, trabalho nos componentes do core compartilhado em React e TypeScript, mantendo contratos entre squads e implementando i18n para operações internacionais.',
     ],
     stack: [
       'React', 'TypeScript', '.NET', 'AWS Lambda', 'SQS', 'SNS',
@@ -32,12 +32,12 @@ export const experiences: Experience[] = [
     location: 'São Paulo, Brasil',
     client: 'Banco Master',
     description:
-      'Referência técnica de frontend no Banco Master. Produto financeiro digital com produtos como Previdência Privada, Tesouro Direto e Renda Fixa — onde consistência e confiabilidade não são opcionais.',
+      'Trabalhei nos produtos digitais do Banco Master: Previdência Privada, Tesouro Direto, Renda Fixa, Fundos de Investimento e Remessas Cambiais. Tanto features novas quanto evolução de produtos existentes.',
     highlights: [
-      'Fui o ponto de referência técnica do time: decisões de arquitetura de componentes, padrões de estado, contratos entre microfrontends e estratégia para migração de código legado.',
-      'Estruturei a arquitetura de microfrontends com Single-SPA e Vite, definindo fronteiras de aplicação, contratos via eventos e estratégia de carregamento de módulos em produção.',
-      'Criei o Design System do banco do zero e, depois, padronizei o sistema legado. Tokens de design, hierarquia de componentes, diretrizes de acessibilidade e publicação automatizada via Storybook.',
-      'Configurei pipelines de CI/CD no Azure DevOps e containerização com Docker. Monitorei estabilidade com Datadog e Dynatrace em contato próximo com UX, Produto e QA.',
+      'Fui o referência técnico de frontend do time — decisões de arquitetura de componentes, padrões de estado, contratos entre microfrontends e estratégia de migração do código legado.',
+      'Trabalhei na arquitetura de microfrontends com Single-SPA e Vite, definindo fronteiras entre aplicações e estratégia de carregamento de módulos em produção.',
+      'Criei o Design System do banco do zero e depois fui responsável por padronizar o sistema legado. Tokens, componentes com variantes e publicação automatizada via Storybook.',
+      'Configurei pipelines de CI/CD no Azure DevOps e containerização com Docker. Acompanhei estabilidade com Datadog e Dynatrace, trabalhando junto com UX, Produto e QA.',
     ],
     stack: [
       'React', 'TypeScript', 'Single-SPA', 'Vite', 'Zustand',
@@ -54,13 +54,13 @@ export const experiences: Experience[] = [
     location: 'São Paulo, Brasil',
     client: 'Ânima Educação',
     description:
-      'Quase três anos desenvolvendo plataformas educacionais para o grupo Ânima, um dos maiores grupos de ensino superior privado do Brasil. Escala nacional, múltiplos sistemas interdependentes.',
+      'Quase três anos desenvolvendo plataformas educacionais para o grupo Ânima. Frontend em React e Vue.js, backend em Node.js e .NET 8, infraestrutura AWS.',
     highlights: [
-      'Desenvolvi aplicações React e Vue.js no frontend e serviços em Node.js serverless e .NET 8 no backend, cobrindo APIs de alto volume e processamento assíncrono.',
-      'Construí pipelines serverless na AWS com Lambda, SQS e CloudFormation. A arquitetura simplificou o scaling nos períodos de pico — matrículas e vestibulares — sem custo operacional fixo.',
-      'Implementei busca e indexação com OpenSearch, melhorando a experiência de pesquisa de cursos para milhares de estudantes.',
-      'Múltiplos bancos de dados por contexto: DynamoDB para leitura intensiva, PostgreSQL para domínios relacionais, Oracle para integrações com ERPs legados.',
-      'TDD com Jest e xUnit. SonarQube integrado ao pipeline como gate obrigatório para merge.',
+      'Trabalhei em APIs de alto volume e processamento assíncrono. Frontend em React e Vue.js, backend em Node.js serverless e .NET 8.',
+      'Montei pipelines serverless na AWS com Lambda, SQS e CloudFormation. Nos períodos de pico — matrículas e vestibulares — a infraestrutura escalava sem precisar de intervenção manual.',
+      'Implementei busca com OpenSearch para o catálogo de cursos, substituindo buscas SQL que travavam em volume.',
+      'Trabalhei com DynamoDB, PostgreSQL e Oracle dependendo do contexto — cada banco com um motivo diferente de estar ali.',
+      'TDD com Jest e xUnit. SonarQube como gate no pipeline — nada entrava sem passar pela análise.',
     ],
     stack: [
       'React', 'Vue.js', 'TypeScript', 'Node.js', '.NET 8',
@@ -78,12 +78,12 @@ export const experiences: Experience[] = [
     location: 'São Paulo, Brasil',
     client: 'Múltiplos clientes',
     description:
-      'Consultoria de produto com responsabilidade sobre o ciclo completo: requisitos, arquitetura, implementação e publicação. Projetos em rastreabilidade, e-commerce e apps mobile publicados nas lojas.',
+      'Consultoria com múltiplos clientes simultâneos — rastreabilidade industrial, e-commerce e apps mobile. Ciclo completo do projeto: levantamento, desenvolvimento e publicação nas lojas.',
     highlights: [
-      'Desenvolvi o sistema de rastreabilidade industrial com Angular e PHP/Laravel, com foco em integridade de dados e performance de consulta.',
-      'Construí e publiquei apps mobile com Flutter para múltiplos clientes, incluindo e-commerce e delivery. Ciclo completo: desenvolvimento, testes, Play Store e App Store.',
-      'Usei Firebase como backend para os apps mobile: Cloud Firestore para dados em tempo real e Storage para mídia.',
-      'No cliente Açaí Concept, trabalhei em stack completa: Flutter mobile, Angular web e Node.js backend, mantendo consistência entre os canais.',
+      'Desenvolvi o sistema de rastreabilidade com Angular e PHP/Laravel. O desafio principal era manter integridade de dados e queries rápidas num volume que crescia bastante.',
+      'Construí e publiquei apps mobile com Flutter para vários clientes: e-commerce, delivery e food service. Play Store e App Store, do zero até live.',
+      'Usei Firebase como backend nos apps mobile — Firestore para dados em tempo real, Storage para mídia.',
+      'No Açaí Concept, trabalhei em toda a stack: Flutter no mobile, Angular no web e Node.js no backend, mantendo os três canais consistentes.',
     ],
     stack: [
       'Angular', 'TypeScript', 'Flutter', 'Dart',
@@ -100,11 +100,11 @@ export const experiences: Experience[] = [
     location: 'São Paulo, Brasil',
     client: 'Universidade de São Paulo · WCA-Brasil',
     description:
-      'Início de carreira em consultoria Microsoft. Portais institucionais para a USP e sistemas administrativos corporativos — ambientes com governança rígida e processos formais.',
+      'Primeiro emprego, em consultoria Microsoft. Portais para as unidades da USP e sistemas internos para a WCA-Brasil.',
     highlights: [
-      'Desenvolvi portais das unidades da USP em SharePoint Foundation com .NET 4.5: fluxos de aprovação, gestão de conteúdo e Master Pages por unidade.',
-      'Modelei workflows de aprovação no SharePoint Designer, adaptados às regras de cada unidade acadêmica.',
-      'Para a WCA-Brasil, mantive sistemas em .NET WebForms com SQL Server: tabelas, views, procedures e gestão no IIS.',
+      'Desenvolvi e mantive portais das unidades da USP em SharePoint Foundation com .NET 4.5: fluxos de aprovação de documentos, gestão de conteúdo e Master Pages por unidade.',
+      'Modelei workflows de aprovação no SharePoint Designer com as regras específicas de cada unidade acadêmica.',
+      'Na WCA-Brasil, trabalhei em sistemas .NET WebForms: banco de dados SQL Server com tabelas, views e procedures, e gestão de aplicações no IIS.',
     ],
     stack: [
       'SharePoint', '.NET', 'ASP.NET WebForms', 'C#',

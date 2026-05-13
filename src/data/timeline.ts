@@ -6,7 +6,7 @@ export const timelineEvents: TimelineEvent[] = [
     year: '2025',
     title: 'Pós Tech — Software Architecture',
     company: 'FIAP',
-    description: 'Aprofundamento em arquitetura de sistemas, design patterns avançados e engenharia de software em escala.',
+    description: 'Sistemas distribuídos, event-driven design, decisões de arquitetura em escala.',
     type: 'education',
   },
   {
@@ -54,7 +54,7 @@ export const timelineEvents: TimelineEvent[] = [
     year: '2018',
     title: 'Tecnólogo em ADS',
     company: 'FIAP',
-    description: 'Análise e Desenvolvimento de Sistemas — base técnica sólida.',
+    description: 'Análise e Desenvolvimento de Sistemas.',
     type: 'education',
   },
 ]

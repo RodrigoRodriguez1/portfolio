@@ -149,8 +149,8 @@ export function Cases() {
       <div className="section-container">
         <SectionHeader
           label="// projetos"
-          title="Cases de alta complexidade."
-          description="Problemas reais, em produção, com impacto direto em operações financeiras críticas."
+          title="Projetos que valem contar."
+          description="Três situações onde o trabalho técnico tinha consequência direta — migração, Design System e documentação de sistema sem doc."
           align="left"
         />
 

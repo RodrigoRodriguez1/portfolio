@@ -58,7 +58,7 @@ export function Contact() {
             <SectionHeader
               label="// contato"
               title="Vamos conversar."
-              description="Aberto a oportunidades em engenharia e arquitetura de software, projetos de alta complexidade e conversas técnicas sobre sistemas distribuídos."
+              description="Aberto a oportunidades em engenharia e arquitetura de software. Se quiser trocar uma ideia sobre algum projeto ou posição, manda mensagem."
               align="left"
             />
 

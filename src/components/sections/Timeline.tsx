@@ -33,8 +33,8 @@ export function Timeline() {
       <div className="section-container">
         <SectionHeader
           label="// trajetória"
-          title="Uma carreira construída com intenção."
-          description="De SharePoint e .NET a microserviços financeiros em escala — cada passo com propósito."
+          title="Por onde passei."
+          description="6 anos, 5 empresas, setores bem diferentes. A linha do tempo mostra como a carreira foi tomando forma."
           align="center"
         />
 
@@ -145,17 +145,17 @@ export function Timeline() {
           ))}
         </div>
 
-        {/* Legend */}
-        <div className="flex items-center justify-center gap-6 mt-10">
+        {/* Legend — compact, apenas no desktop */}
+        <div className="hidden md:flex items-center justify-center gap-5 mt-8">
           {Object.entries(typeLabel).map(([key, label]) => (
-            <div key={key} className="flex items-center gap-2">
+            <div key={key} className="flex items-center gap-1.5">
               <div
                 className={cn(
                   'w-2 h-2 rounded-full border-2',
                   typeStyles[key as keyof typeof typeStyles].dot,
                 )}
               />
-              <span className="text-[11px] font-mono text-text-muted">{label}</span>
+              <span className="text-[10px] font-mono text-text-muted">{label}</span>
             </div>
           ))}
         </div>
