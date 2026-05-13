@@ -18,37 +18,40 @@ export function About() {
           <div>
             <SectionHeader
               label="// sobre"
-              title="Engenheiro que pensa como arquiteto."
+              title="Construo sistemas que precisam funcionar."
               align="left"
             />
 
             <div className="space-y-5 text-text-secondary text-base leading-relaxed">
               <p>
-                Sou Full Stack Engineer com{' '}
-                <span className="text-text-primary font-medium">6 anos de experiência</span>{' '}
-                em sistemas de alta complexidade, atuando no mercado financeiro com clientes como{' '}
+                Sou engenheiro de software com{' '}
+                <span className="text-text-primary font-medium">seis anos de experiência</span>{' '}
+                em projetos de alta criticidade — com passagem por{' '}
                 <span className="text-text-primary font-medium">BTG Pactual</span> e{' '}
-                <span className="text-text-primary font-medium">Banco Master</span>.
+                <span className="text-text-primary font-medium">Banco Master</span>,
+                onde o custo de uma falha em produção vai muito além do técnico.
               </p>
               <p>
-                Trabalho de forma full stack — backend em{' '}
-                <span className="text-text-primary">.NET</span> e microserviços, microfrontends em{' '}
-                <span className="text-text-primary">React</span>, e infraestrutura cloud-native na{' '}
-                <span className="text-text-primary">AWS</span> e Azure — entregando soluções críticas
-                nas áreas de Crédito, Garantias, Previdência Privada e Tesouro Direto.
+                Trabalho de forma full stack: backend em{' '}
+                <span className="text-text-primary">.NET</span> com arquitetura de microserviços,
+                microfrontends em{' '}
+                <span className="text-text-primary">React</span> com Single-SPA,
+                e infraestrutura cloud-native na{' '}
+                <span className="text-text-primary">AWS</span> —
+                entregando em domínios como Crédito, Garantias, Previdência Privada e Tesouro Direto.
               </p>
               <p>
-                Tenho obsessão por arquitetura limpa, sistemas resilientes e código que escala.
-                Fui o principal responsável pela{' '}
+                Um dos trabalhos de que mais me orgulho foi a{' '}
                 <span className="text-text-primary">migração de infraestrutura bancária</span>{' '}
-                do Brasil para AWS nos EUA, estruturando do zero toda a camada de rede,
-                segurança e mensageria em ambiente multi-region.
+                do Brasil para uma região AWS nos EUA — conduzida do zero, sem interrupção
+                do ambiente de produção, com isolamento de rede completo e conformidade
+                com os requisitos regulatórios do banco.
               </p>
               <p>
-                Atualmente aprofundando minha visão sistêmica na{' '}
-                <span className="text-text-primary">Pós Tech em Software Architecture pela FIAP</span>{' '}
-                — com foco em evoluir para papéis de arquitetura de software em engenharia
-                de produto de alto impacto.
+                Estou aprofundando minha visão sistêmica na{' '}
+                <span className="text-text-primary">Pós Tech em Software Architecture pela FIAP</span>,
+                com foco em evoluir para papéis de arquitetura — onde as decisões têm
+                impacto estrutural nos sistemas e nos times.
               </p>
             </div>
 
@@ -99,8 +102,8 @@ export function About() {
                 Pós Tech — Software Architecture
               </p>
               <p className="text-text-muted text-xs">
-                FIAP · fev/2025 → fev/2026 · Foco em arquitetura de sistemas distribuídos,
-                event-driven design e engenharia de plataforma.
+                FIAP · fev/2025 → fev/2026 · Arquitetura de sistemas distribuídos,
+                event-driven design, engenharia de plataforma e decisões de longo prazo.
               </p>
             </motion.div>
 
@@ -125,14 +128,14 @@ export function About() {
               <p className="text-xs font-mono text-text-muted mb-2">Atuação atual</p>
               <p className="text-text-primary text-sm font-medium">FCamara · BTG Pactual</p>
               <p className="text-text-secondary text-xs mt-1">
-                Crédito & Garantias · AWS · .NET · React · Multi-region
+                Crédito & Garantias · Infraestrutura AWS · .NET · React
               </p>
               <div className="flex items-center gap-1.5 mt-3">
                 <span className="relative flex h-1.5 w-1.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500" />
                 </span>
-                <span className="text-xs font-mono text-text-muted">Ativo desde dez/2025</span>
+                <span className="text-xs font-mono text-text-muted">Desde dez/2025</span>
               </div>
             </motion.div>
           </div>

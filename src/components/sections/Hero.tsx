@@ -52,7 +52,7 @@ export function Hero() {
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500" />
             </span>
             <span className="text-xs font-mono text-text-secondary">
-              Disponível para oportunidades sênior
+              Aberto a novas oportunidades
             </span>
           </div>
         </motion.div>
@@ -70,7 +70,7 @@ export function Hero() {
                   'linear-gradient(135deg, #fafafa 30%, rgba(250,250,250,0.55) 100%)',
               }}
             >
-              Full Stack Engineer
+              Engenharia &amp; Arquitetura
             </span>
           </h1>
         </motion.div>
@@ -80,9 +80,9 @@ export function Hero() {
           {...fadeUp(0.32)}
           className="text-base md:text-lg text-text-secondary max-w-xl leading-relaxed mb-3 text-balance"
         >
-          6 anos construindo sistemas financeiros de alta complexidade.
-          Especialista em arquitetura de microserviços, microfrontends e
-          infraestrutura cloud-native na AWS.
+          Sistemas financeiros de alta criticidade, arquitetura de microserviços
+          e infraestrutura cloud-native. Seis anos construindo software que
+          opera em escala real, com tolerância zero a falhas.
         </motion.p>
 
         {/* Location */}

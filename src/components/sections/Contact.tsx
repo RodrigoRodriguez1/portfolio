@@ -57,8 +57,8 @@ export function Contact() {
           <div>
             <SectionHeader
               label="// contato"
-              title="Vamos conversar sobre arquitetura."
-              description="Aberto a oportunidades como Senior Engineer ou Software Architect, projetos de alta complexidade e conversas técnicas."
+              title="Vamos conversar."
+              description="Aberto a oportunidades em engenharia e arquitetura de software, projetos de alta complexidade e conversas técnicas sobre sistemas distribuídos."
               align="left"
             />
 
