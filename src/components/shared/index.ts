@@ -1,0 +1,5 @@
+export { AnimatedSection } from './AnimatedSection'
+export { SectionHeader } from './SectionHeader'
+export { Badge } from './Badge'
+export { GradientText } from './GradientText'
+export { GithubIcon, LinkedinIcon } from './SocialIcons'

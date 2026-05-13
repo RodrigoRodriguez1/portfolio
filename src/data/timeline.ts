@@ -1,0 +1,60 @@
+import type { TimelineEvent } from '@/types'
+
+export const timelineEvents: TimelineEvent[] = [
+  {
+    id: 'fiap-pos',
+    year: '2025',
+    title: 'Pós Tech — Software Architecture',
+    company: 'FIAP',
+    description: 'Aprofundamento em arquitetura de sistemas, design patterns avançados e engenharia de software em escala.',
+    type: 'education',
+  },
+  {
+    id: 'fcamara-btg',
+    year: '2025',
+    title: 'Full Stack Developer',
+    company: 'FCamara · BTG Pactual',
+    description: 'Migração AWS multi-region, sistemas de Crédito e Garantias, Débito Automático.',
+    type: 'job',
+  },
+  {
+    id: 'espresso-master',
+    year: '2025',
+    title: 'Referência Técnica Frontend',
+    company: 'Espresso Labs · Banco Master',
+    description: 'Design System do zero, microfrontends com Single-SPA, produtos financeiros críticos.',
+    type: 'job',
+  },
+  {
+    id: 'dti-anima',
+    year: '2022',
+    title: 'Full Stack Developer',
+    company: 'dti digital · Ânima Educação',
+    description: 'React, Node.js, .NET 8, AWS — plataforma educacional em escala nacional.',
+    type: 'job',
+  },
+  {
+    id: 'thoth',
+    year: '2020',
+    title: 'Full Stack + Mobile Developer',
+    company: 'THOTH Company',
+    description: 'Angular, Flutter, Node.js — múltiplos clientes, apps publicados em Play Store e App Store.',
+    type: 'job',
+  },
+  {
+    id: 'tksi-usp',
+    year: '2019',
+    title: 'Desenvolvedor .NET / SharePoint',
+    company: 'tksi · USP',
+    description: 'Portais institucionais, SharePoint, .NET — início da carreira em consultoria de TI.',
+    type: 'job',
+  },
+  {
+    id: 'fiap-grad',
+    year: '2018',
+    title: 'Tecnólogo em ADS',
+    company: 'FIAP',
+    description: 'Análise e Desenvolvimento de Sistemas — base técnica sólida.',
+    type: 'education',
+  },
+]
