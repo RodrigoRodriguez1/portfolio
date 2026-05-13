@@ -18,40 +18,39 @@ export function About() {
           <div>
             <SectionHeader
               label="// sobre"
-              title="Construo sistemas que precisam funcionar."
+              title="Gosto de problemas que importam."
               align="left"
             />
 
             <div className="space-y-5 text-text-secondary text-base leading-relaxed">
               <p>
-                Sou engenheiro de software com{' '}
-                <span className="text-text-primary font-medium">seis anos de experiência</span>{' '}
-                em projetos de alta criticidade — com passagem por{' '}
+                Sou engenheiro full stack com seis anos trabalhando em{' '}
+                <span className="text-text-primary font-medium">sistemas financeiros</span>.
+                Passei por{' '}
                 <span className="text-text-primary font-medium">BTG Pactual</span> e{' '}
                 <span className="text-text-primary font-medium">Banco Master</span>,
-                onde o custo de uma falha em produção vai muito além do técnico.
+                onde qualquer falha em produção tem consequência real.
               </p>
               <p>
                 Trabalho de forma full stack: backend em{' '}
-                <span className="text-text-primary">.NET</span> com arquitetura de microserviços,
+                <span className="text-text-primary">.NET</span>,
                 microfrontends em{' '}
-                <span className="text-text-primary">React</span> com Single-SPA,
-                e infraestrutura cloud-native na{' '}
-                <span className="text-text-primary">AWS</span> —
-                entregando em domínios como Crédito, Garantias, Previdência Privada e Tesouro Direto.
+                <span className="text-text-primary">React</span>{' '}
+                com Single-SPA, e infraestrutura na{' '}
+                <span className="text-text-primary">AWS</span>.
+                Os domínios que já trabalhei incluem Crédito, Garantias,
+                Previdência Privada e Tesouro Direto.
               </p>
               <p>
-                Um dos trabalhos de que mais me orgulho foi a{' '}
-                <span className="text-text-primary">migração de infraestrutura bancária</span>{' '}
-                do Brasil para uma região AWS nos EUA — conduzida do zero, sem interrupção
-                do ambiente de produção, com isolamento de rede completo e conformidade
-                com os requisitos regulatórios do banco.
+                Um trabalho que me marcou foi a{' '}
+                <span className="text-text-primary">migração da infraestrutura de Garantias</span>{' '}
+                do Brasil para uma região AWS nos EUA. Conduzi do zero, sem
+                interrupção do ambiente de produção.
               </p>
               <p>
-                Estou aprofundando minha visão sistêmica na{' '}
+                Estou na{' '}
                 <span className="text-text-primary">Pós Tech em Software Architecture pela FIAP</span>,
-                com foco em evoluir para papéis de arquitetura — onde as decisões têm
-                impacto estrutural nos sistemas e nos times.
+                aprofundando o lado de decisões sistêmicas e design de plataforma.
               </p>
             </div>
 
@@ -102,8 +101,7 @@ export function About() {
                 Pós Tech — Software Architecture
               </p>
               <p className="text-text-muted text-xs">
-                FIAP · fev/2025 → fev/2026 · Arquitetura de sistemas distribuídos,
-                event-driven design, engenharia de plataforma e decisões de longo prazo.
+                FIAP · 2025 → 2026 · Sistemas distribuídos, event-driven design e engenharia de plataforma.
               </p>
             </motion.div>
 
@@ -114,9 +112,9 @@ export function About() {
             >
               <p className="text-xs font-mono text-text-muted mb-2">Idiomas</p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="subtle">Português — Nativo</Badge>
-                <Badge variant="subtle">Inglês — Professional Working</Badge>
-                <Badge variant="subtle">Espanhol — Básico</Badge>
+                <Badge variant="subtle">Português · Nativo</Badge>
+                <Badge variant="subtle">Inglês · Professional Working</Badge>
+                <Badge variant="subtle">Espanhol · Básico</Badge>
               </div>
             </motion.div>
 

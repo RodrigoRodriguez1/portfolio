@@ -80,9 +80,8 @@ export function Hero() {
           {...fadeUp(0.32)}
           className="text-base md:text-lg text-text-secondary max-w-xl leading-relaxed mb-3 text-balance"
         >
-          Sistemas financeiros de alta criticidade, arquitetura de microserviços
-          e infraestrutura cloud-native. Seis anos construindo software que
-          opera em escala real, com tolerância zero a falhas.
+          Seis anos em sistemas financeiros que não podem falhar.
+          Backend, frontend e infraestrutura AWS — do BTG Pactual ao Banco Master.
         </motion.p>
 
         {/* Location */}
