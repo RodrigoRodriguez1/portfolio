@@ -26,7 +26,7 @@ export const cases: Case[] = [
     title: 'Design System · Banco Master',
     subtitle: 'Biblioteca de componentes para produtos financeiros de squads diferentes',
     context:
-      'O Banco Master tinha vários produtos digitais — Previdência, Tesouro Direto, Renda Fixa, Fundos — desenvolvidos por squads diferentes, sem componentes compartilhados. Cada time fazia o seu, o que gerava inconsistência visual e muito retrabalho.',
+      'O Banco Master tinha vários produtos digitais (Previdência, Tesouro Direto, Renda Fixa, Fundos) desenvolvidos por squads diferentes, sem componentes compartilhados. Cada time fazia o seu, o que gerava inconsistência visual e muito retrabalho.',
     challenge:
       'Criar um Design System que múltiplos times conseguissem adotar sem depender de mim, numa arquitetura Single-SPA onde as aplicações são isoladas. E sem quebrar o que já estava em produção.',
     solution:
@@ -43,14 +43,14 @@ export const cases: Case[] = [
   },
   {
     id: 'stackfood',
-    title: 'StackFood — Pedidos com microserviços',
+    title: 'StackFood: pedidos com microserviços',
     subtitle: 'Plataforma de food service com 5 serviços .NET, SNS/SQS e infra completa na AWS',
     context:
       'Projeto da pós-graduação em Software Architecture (FIAP SOAT). O desafio era construir um sistema real de gerenciamento de pedidos para lanchonetes, com múltiplos times de desenvolvimento e serviços independentes.',
     challenge:
-      'Manter o fluxo de pedido consistente — criação, pagamento, produção e entrega — sem acoplamento entre serviços. Qualquer falha numa etapa não podia derrubar as outras, e o estado do pedido precisava ser rastreável em tempo real.',
+      'Manter o fluxo de pedido consistente (criação, pagamento, produção e entrega) sem acoplamento entre serviços. Qualquer falha numa etapa não podia derrubar as outras, e o estado do pedido precisava ser rastreável a qualquer momento.',
     solution:
-      'Cinco microserviços .NET 8, cada um com banco de dados próprio (PostgreSQL ou DynamoDB conforme o padrão de acesso). Comunicação assíncrona via SNS/SQS — cada serviço publica e consome eventos sem saber quem está do outro lado. Clean Architecture e DDD em todos os serviços. Infra provisionada com Terraform: EKS para os containers, API Gateway com Lambda para autenticação, ArgoCD para GitOps e Cloudflare na borda.',
+      'Cinco microserviços .NET 8, cada um com banco de dados próprio (PostgreSQL ou DynamoDB conforme o padrão de acesso). Comunicação assíncrona via SNS/SQS: cada serviço publica e consome eventos sem saber quem está do outro lado. Clean Architecture e DDD em todos os serviços. Infra com Terraform: EKS para os containers, API Gateway com Lambda para autenticação, ArgoCD para GitOps e Cloudflare na borda.',
     impact:
       'Fluxo de pedido completo funcionando de ponta a ponta, com BDD tests no serviço de pagamentos e cobertura de testes unitários em todos os serviços. Deploy automatizado via ArgoCD a cada merge na main.',
     stack: [
@@ -66,22 +66,22 @@ export const cases: Case[] = [
   },
   {
     id: 'optimus-frame',
-    title: 'OptimusFrame — Processamento de vídeo',
+    title: 'OptimusFrame: processamento de vídeo',
     subtitle: 'Pipeline assíncrono de extração de frames com .NET, RabbitMQ e OpenCV',
     context:
-      'Hackathon da pós-graduação (FIAP SOAT). O sistema precisava receber uploads de vídeo, processar os frames de forma assíncrona e disponibilizar o resultado em ZIP para download — sem bloquear o cliente durante o processamento.',
+      'Hackathon da pós-graduação (FIAP SOAT). O sistema precisava receber uploads de vídeo, processar os frames de forma assíncrona e disponibilizar o resultado em ZIP para download, sem bloquear o cliente durante o processamento.',
     challenge:
       'Processamento de vídeo é pesado e bloqueante. Fazer isso de forma síncrona numa API era inviável. O pipeline precisava ser resiliente a falhas e notificar erros sem depender de polling.',
     solution:
       'Três serviços .NET 8 com responsabilidades separadas. O Core recebe o upload em Base64, salva no S3, persiste metadados no PostgreSQL e publica o evento no RabbitMQ. O Transform Worker consome de forma assíncrona, usa OpenCvSharp para extrair os frames, comprime em ZIP e sobe o resultado ao S3. Erros notificados via AWS SES. URL pré-assinada com 60 min de validade para o download. Autenticação via AWS Cognito. Mesma base de infra do StackFood: Terraform, EKS, ArgoCD, API Gateway.',
     impact:
-      'Pipeline funcionando de ponta a ponta no hackathon. Cobertura de testes > 70% com xUnit, Moq e FluentAssertions. O projeto usou OpenCvSharp — binding .NET do OpenCV — que foi a parte mais técnica e diferente do que normalmente se faz em .NET.',
+      'Pipeline funcionando de ponta a ponta no hackathon. Cobertura de testes acima de 70% com xUnit, Moq e FluentAssertions. O diferencial foi o uso de OpenCvSharp (binding .NET do OpenCV), que não é algo comum de ver em projetos .NET.',
     stack: [
       '.NET 8', 'C#', 'RabbitMQ', 'OpenCvSharp', 'AWS S3',
       'AWS Cognito', 'AWS SES', 'PostgreSQL', 'API Gateway',
       'EKS', 'Kubernetes', 'Terraform', 'ArgoCD', 'Docker', 'xUnit',
     ],
-    company: 'Pós Tech FIAP SOAT — Hackathon',
+    company: 'Pós Tech FIAP SOAT · Hackathon',
     year: '2025',
     highlight: false,
     tag: 'Pós-graduação',
@@ -92,7 +92,7 @@ export const cases: Case[] = [
     title: 'Mapeamento do Débito Automático',
     subtitle: 'Documentar um sistema em produção que não tinha documentação',
     context:
-      'O sistema de Débito Automático processava transações recorrentes no BTG, mas não existia documentação. O conhecimento estava na cabeça de poucas pessoas — qualquer saída do time criava um problema real.',
+      'O sistema de Débito Automático processava transações recorrentes no BTG, mas não existia documentação. O conhecimento estava concentrado em poucas pessoas e qualquer saída do time criava um problema real.',
     challenge:
       'Mapear a arquitetura de um sistema em produção sem nenhuma referência escrita, entendendo as integrações, os eventos e onde os pontos de falha estavam.',
     solution:

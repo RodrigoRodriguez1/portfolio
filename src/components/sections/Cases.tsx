@@ -168,7 +168,7 @@ export function Cases() {
         <SectionHeader
           label="// projetos"
           title="Projetos que valem contar."
-          description="Do trabalho no BTG e Banco Master até os projetos da pós-graduação — situações onde as decisões técnicas tinham consequência real."
+          description="Do trabalho no BTG e Banco Master até os projetos da pós-graduação. Situações onde as decisões técnicas tinham consequência real."
           align="left"
         />
 
@@ -188,7 +188,7 @@ export function Cases() {
         >
           <div className="h-px flex-1 bg-border max-w-[80px]" />
           <p className="text-text-muted text-xs font-mono">
-            O trabalho real está em repositórios privados de clientes —{' '}
+            O trabalho real está em repositórios privados de clientes.{' '}
             <button
               onClick={() => {
                 const el = document.getElementById('contact')

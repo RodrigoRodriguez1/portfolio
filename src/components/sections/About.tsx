@@ -4,7 +4,7 @@ import { AnimatedSection, SectionHeader, Badge } from '@/components/shared'
 const certifications = [
   'Exam 480: HTML5 · JavaScript · CSS3',
   'Exam 339: SharePoint Server 2016',
-  'Pós Tech Software Architecture — FIAP (2025 → 2026)',
+  'Pós Tech Software Architecture · FIAP (2025 → 2026)',
 ]
 
 const highlights = [
@@ -56,8 +56,8 @@ export function About() {
               <p>
                 Um projeto que me marcou foi a{' '}
                 <span className="text-text-primary">migração da infraestrutura de Garantias</span>{' '}
-                do Brasil para uma região AWS nos EUA. Montei a conta do zero —
-                rede, IAM, CloudFormation, filas — sem parar o ambiente brasileiro.
+                do Brasil para uma região AWS nos EUA. Montei a conta do zero:
+                rede, IAM, CloudFormation e filas, sem parar o ambiente brasileiro.
               </p>
               <p>
                 Atualmente na{' '}
@@ -94,9 +94,9 @@ export function About() {
                 className="card-base group"
               >
                 <p className="text-text-primary text-sm font-medium mb-1.5 group-hover:text-accent transition-colors duration-200">
-                  {h.label}
-                </p>
-                <p className="text-text-secondary text-sm leading-relaxed">{h.detail}</p>
+                {h.label}
+              </p>
+              <p className="text-text-secondary text-sm leading-relaxed">{h.detail}</p>
               </motion.div>
             ))}
 
@@ -108,7 +108,7 @@ export function About() {
             >
               <p className="text-xs font-mono text-accent mb-2">Em andamento</p>
               <p className="text-text-primary font-medium text-sm mb-1">
-                Pós Tech — Software Architecture
+                Pós Tech · Software Architecture
               </p>
               <p className="text-text-muted text-xs">
                 FIAP · 2025 → 2026 · Sistemas distribuídos, event-driven design, engenharia de plataforma.

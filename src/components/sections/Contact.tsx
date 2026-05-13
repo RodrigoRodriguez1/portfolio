@@ -28,7 +28,7 @@ export function Contact() {
     setState('sending')
 
     // mailto fallback — no backend dependency
-    const subject = encodeURIComponent(`Contato via portfólio — ${form.name}`)
+    const subject = encodeURIComponent(`Contato via portfólio: ${form.name}`)
     const body = encodeURIComponent(
       `Nome: ${form.name}\nEmail: ${form.email}\n\nMensagem:\n${form.message}`,
     )
@@ -204,10 +204,10 @@ export function Contact() {
                   <span className="font-mono text-xs">Abrindo cliente de email...</span>
                 )}
                 {state === 'sent' && (
-                  <span className="font-mono text-xs">✓ Mensagem preparada — verifique seu email</span>
+                  <span className="font-mono text-xs">✓ Mensagem preparada. Verifique seu email</span>
                 )}
                 {state === 'error' && (
-                  <span className="font-mono text-xs">Erro ao enviar — tente por email diretamente</span>
+                  <span className="font-mono text-xs">Erro ao enviar. Tente por email diretamente</span>
                 )}
               </motion.button>
 

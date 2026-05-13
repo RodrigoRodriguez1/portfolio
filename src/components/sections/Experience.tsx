@@ -11,7 +11,7 @@ function periodLabel(start: string, end: string | null): string {
     new Intl.DateTimeFormat('pt-BR', { month: 'short', year: 'numeric' }).format(
       new Date(d + '-01'),
     )
-  return `${fmt(start)} — ${end ? fmt(end) : 'Presente'}`
+  return `${fmt(start)} até ${end ? fmt(end) : 'presente'}`
 }
 
 function durationLabel(start: string, end: string | null): string {
@@ -162,7 +162,7 @@ export function Experience() {
         <SectionHeader
           label="// experiência"
           title="Por onde passei."
-          description="5 empresas em 6 anos. Consultoria, produto e fintech — cada projeto com contexto diferente."
+          description="5 empresas em 6 anos. Consultoria, produto e fintech, cada um com um contexto diferente."
           align="left"
         />
 

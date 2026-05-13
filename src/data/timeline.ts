@@ -4,7 +4,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     id: 'fiap-pos',
     year: '2025',
-    title: 'Pós Tech — Software Architecture',
+    title: 'Pós Tech: Software Architecture',
     company: 'FIAP',
     description: 'Sistemas distribuídos, event-driven design, decisões de arquitetura em escala.',
     type: 'education',
@@ -30,7 +30,7 @@ export const timelineEvents: TimelineEvent[] = [
     year: '2022',
     title: 'Full Stack Developer',
     company: 'dti digital · Ânima Educação',
-    description: 'React, Node.js, .NET 8, AWS — plataforma educacional em escala nacional.',
+    description: 'React, Node.js, .NET 8 e AWS. Plataforma educacional com escala nacional.',
     type: 'job',
   },
   {
@@ -38,7 +38,7 @@ export const timelineEvents: TimelineEvent[] = [
     year: '2020',
     title: 'Full Stack + Mobile Developer',
     company: 'THOTH Company',
-    description: 'Angular, Flutter, Node.js — múltiplos clientes, apps publicados em Play Store e App Store.',
+    description: 'Angular, Flutter e Node.js. Múltiplos clientes, apps publicados na Play Store e App Store.',
     type: 'job',
   },
   {
@@ -46,7 +46,7 @@ export const timelineEvents: TimelineEvent[] = [
     year: '2019',
     title: 'Desenvolvedor .NET / SharePoint',
     company: 'tksi · USP',
-    description: 'Portais institucionais, SharePoint, .NET — início da carreira em consultoria de TI.',
+    description: 'Portais institucionais, SharePoint e .NET. Primeiro emprego, em consultoria Microsoft.',
     type: 'job',
   },
   {
